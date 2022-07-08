@@ -1,0 +1,80 @@
+p {font-family: URW Chancery L, cursive;
+   font-size: 2em;
+   text-shadow: yellow 1px 0 10px;
+ }
+
+body {
+  font-family: Consolas, monospace;
+}
+
+.container {
+  padding: 0 40px;
+  margin-left: 80px;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 1.2em;
+  position: relative;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:#FFD801;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #dadada;
+  width: 300px;
+}
+
+h1 {
+  font-family: Сomic Sans MS, cursive;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px grey, 0 0 1em yellow, 0 0 0.2em yellow;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1.25em 0;
+  text-decoration-line: underline;
+  text-decoration-color: black;
+}
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid #FFD801;
+}
+
+button {background: -moz-linear-gradient(#FFD801, #FFFACD);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFD801), to(#FFFACD));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD801', endColorstr='#FFFACD');
+    padding: 3px 7px;
+    color: #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #000000;}
+button:hover {
+  background:#FFFACD;}
+button:active {
+background-color: #FFD801;
+}
